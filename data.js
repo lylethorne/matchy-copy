@@ -42,8 +42,12 @@ console.log(animal);
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
+ * //can access different properties using dot and bracket notation
+ * can access key and value pairs using a for in loop
  *
  * 2. What are the different ways of accessing elements on arrays?
+ * //can access using dot notation with the different array methods 
+ * and also their index ex array[0] accesses the first element within the array
  *
  * *******************************************************************
  */
