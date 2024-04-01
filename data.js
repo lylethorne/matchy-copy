@@ -22,6 +22,13 @@ console.log(animal);
 //////////////////////////////////////////////////////////////////////
 var noises = [];
 noises[0] = 'bark';
+noises[noises.length] = 'boof';
+noises.unshift('grumbles');
+noises.splice(3, 0, 'whine');
+console.log(noises.length);
+console.log(noises.length - 1);
+console.log(noises);
+
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
