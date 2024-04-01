@@ -41,21 +41,21 @@ If you don't know any of these concepts, see a Teacher or TA before starting thi
 As we code, save and refresh the browser tab running Matchy. Your work will begin to create a web UI, signaling you've correctly coded the exercises. You will also be logging your data to the console, so you can check this output to make sure your code works as expected.
 
 ## Step 1 - Object Creation
- 1. [ ] Open up the file data.js.
- 2. [ ] Create a variable named `animal` and assign it to an empty object.
- 3. [ ] Using **dot notation** give `animal` a **property** named `species` with a value of any animal species.
- 4. [ ] Using **bracket notation** give `animal` a **property** called `name` with a value of your animal`s name.
- 5. [ ] Using either notation, give `animal` a **property** called `noises` with a value of empty array.
- 6. [ ] Print your `animal` Object to the console by adding, `console.log(animal);`,
- 7. [ ] Save your work (command-s || ctrl-s), switch back to the browser tab with your website running, and refresh your page to see what `animal` looks like.
- 8. [ ] It should be something like: 
+ 1. [* ] Open up the file data.js.
+ 2. [* ] Create a variable named `animal` and assign it to an empty object.
+ 3. [ *] Using **dot notation** give `animal` a **property** named `species` with a value of any animal species.
+ 4. [ *] Using **bracket notation** give `animal` a **property** called `name` with a value of your animal`s name.
+ 5. [* ] Using either notation, give `animal` a **property** called `noises` with a value of empty array.
+ 6. [ *] Print your `animal` Object to the console by adding, `console.log(animal);`,
+ 7. [ *] Save your work (command-s || ctrl-s), switch back to the browser tab with your website running, and refresh your page to see what `animal` looks like.
+ 8. [ *] It should be something like: 
 ~~~JS
 { species: 'duck', name: 'Jennifer', noises: [] }
 ~~~
 
 ## Step 2 - Array Creation
- 1. [ ] Create a variable named `noises` and assign it to an empty array.
- 2. [ ] Using **bracket notation** give `noises` it's first element. A string representing a sound your animal might make.
+ 1. [ *] Create a variable named `noises` and assign it to an empty array.
+ 2. [ *] Using **bracket notation** give `noises` it's first element. A string representing a sound your animal might make.
  3. [ ] Using an array function add another noise to the end of `noises`.
  4. [ ] Go to the array documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?redirectlocale=en-US
  5. [ ] Look through the functions until you find the one that will place an element at the begining of the array.
