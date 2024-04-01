@@ -35,7 +35,7 @@ console.log(noises);
 //////////////////////////////////////////////////////////////////////
 
 animal['noises'] = noises;
-animal.noises.push('woof');
+animal.noises.push('yawn');
 console.log(animal);
 
 /* *******************************************************************
@@ -64,15 +64,32 @@ console.log(animal);
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+var animals = [];
+animals.push(animal);
+console.log(animals);
+var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] };
+animals.push(duck);
+console.log(animals);
 
-
+var kiki = { species: 'cat', name: 'Kiki', noises: ['purr', 'moew', 'yelling']};
+var lizard = {species: 'lizard', name: 'King', noises: ['roar', 'chomp']};
+animals.push(kiki);
+animals.push(lizard);
+console.log(animals);
+console.log(animals.length);
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
-
+//using an array to hold the list of friends is the best way to hold other data like this
+var friends = [];
+function getRandom(animals){
+return Math.random();
+}
+getRandom(animals);
+friends.push(getRandom(animals));
+console.log(friends);
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
