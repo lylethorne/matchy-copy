@@ -61,17 +61,17 @@ As we code, save and refresh the browser tab running Matchy. Your work will begi
  5. [ *] Look through the functions until you find the one that will place an element at the begining of the array.
  6. [ *] Add an element to `noises` using this function.
  7. [ *] Using **bracket syntax** again, add another element to the end of `noises`. Make sure that the way you do this step would work no matter how many elements `noises` had. In other words, don't hard code the position of the new element.
- 8. [ ] `console.log` the length of `noises`
- 9. [ ] `console.log` the last element in `noises` again without hard coding the index.
- 10. [ ] `console.log` the whole array.
- 11. [ ] Does it look right?
+ 8. [* ] `console.log` the length of `noises`
+ 9. [ *] `console.log` the last element in `noises` again without hard coding the index.
+ 10. [ *] `console.log` the whole array.
+ 11. [ *] Does it look right?
  
 
 ## Step 3 - Combining Step 1 and 2
- 1. [ ] Using **bracket syntax**, assign the `noises` property on `animal` to our new `noises` array.
- 2. [ ] Using any syntax add another noise to the `noises` property on `animal`.
- 3. [ ] `console.log` `animal`.
- 4. [ ] Does it look right?
+ 1. [ *] Using **bracket syntax**, assign the `noises` property on `animal` to our new `noises` array.
+ 2. [ *] Using any syntax add another noise to the `noises` property on `animal`.
+ 3. [ *] `console.log` `animal`.
+ 4. [ *] Does it look right?
 
 
 ## Step 4 - Review
