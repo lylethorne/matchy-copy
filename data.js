@@ -82,13 +82,21 @@ console.log(animals.length);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-//using an array to hold the list of friends is the best way to hold other data like this
+/**using an array to hold the list of friends is the best way to hold other data like this
+ * an object's key/value pairs are related to the object that they represent.  
+*/
 var friends = [];
-function getRandom(animals){
-return Math.random();
+function getRandom(){
+  //looping over array
+  for(var i = 0; i < animals.length; i ++){
+let x = Math.floor(Math.random() * animals.length);
+return x;
+  }
 }
-getRandom(animals);
-friends.push(getRandom(animals));
+//console.log(getRandom()); //0
+friends.push(animals[0].name);
+console.log(friends);
+kiki.friends = [];
 console.log(friends);
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
