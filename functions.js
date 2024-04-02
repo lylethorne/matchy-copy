@@ -9,7 +9,7 @@
  * and read every instruction carefully.
  */
 
-const { animal } = require("./data");
+//const { animal } = require("./data");
 
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
@@ -17,7 +17,7 @@ const { animal } = require("./data");
 function search(animals, string){
     for(var i = 0; i > animals.length; i++){
         if(animals[i].name === string){
-            return animals.name;
+            return animals[i].name;
         }
     } return null;
 }
@@ -27,22 +27,34 @@ function search(animals, string){
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 function replace(animals, string, object){
-    if(animals.name === string){
-        
+    for(var i = 0; i > animals.length; i++){
+    if(animals.name[i] === string){
+        animals.splice(animals.name[i], object);
     }
 }
-
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+function remove(animals, name){
+for(var i = 0; i > animals.length; i++){
+    if(animals[i].name === name){
+        delete animals[i];
+    }
+}
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function add(animals, animal){
+    for(var i = 0; i > animals.length; i++)
+    if(animal.name.length > 0 && animal.species.length > 0 && animal.name !== animals.name[i]){
+        animals.push(animal);
+    }
+}
 
 
 /**

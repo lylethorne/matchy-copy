@@ -93,8 +93,9 @@ let x = Math.floor(Math.random() * animals.length);
 return x;
   }
 }
-//console.log(getRandom()); //0
-friends.push(animals[0].name);
+var index = getRandom(animals);
+var randomAnimal = animals[index].name;
+friends.push(randomAnimal);
 console.log(friends);
 kiki.friends = [];
 console.log(friends);
