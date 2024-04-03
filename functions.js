@@ -39,10 +39,10 @@ function replace(animals, string, object){
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-function remove(animals, name){
+function remove(animals, string){
 for(var i = 0; i < animals.length; i++){
-    if(animals[i].name === name){
-        delete animals[i];
+    if(animals[i].name === string){
+        animals.splice([i], 1, [i]);
     }
 }
 }
@@ -52,7 +52,7 @@ for(var i = 0; i < animals.length; i++){
 //////////////////////////////////////////////////////////////////////
 function add(animals, animal){
     for(var i = 0; i < animals.length; i++)
-    if(animal.name.length > 0 && animal.species.length > 0 && animal.name !== animals.name[i]){
+    if(animal['name'].length > 0 && animal['species'].length > 0 && animal['name'] !== animals[i].name){
         animals.push(animal);
     }
 }
