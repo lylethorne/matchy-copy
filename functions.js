@@ -15,7 +15,7 @@
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 function search(animals, string){
-    for(var i = 0; i > animals.length; i++){
+    for(var i = 0; i < animals.length; i++){
         if(animals[i].name === string){
             return animals[i];
         }
@@ -27,9 +27,10 @@ function search(animals, string){
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 function replace(animals, string, object){
-    for(var i = 0; i > animals.length; i++){
+    for(var i = 0; i < animals.length; i++){
     if(animals[i].name === string){
-        animals.splice(animals[i].name, object);
+        animals.splice([i], 1, object);
+        animals.push(object);
     }
 }
 }
@@ -39,7 +40,7 @@ function replace(animals, string, object){
 //////////////////////////////////////////////////////////////////////
 
 function remove(animals, name){
-for(var i = 0; i > animals.length; i++){
+for(var i = 0; i < animals.length; i++){
     if(animals[i].name === name){
         delete animals[i];
     }
@@ -50,7 +51,7 @@ for(var i = 0; i > animals.length; i++){
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 function add(animals, animal){
-    for(var i = 0; i > animals.length; i++)
+    for(var i = 0; i < animals.length; i++)
     if(animal.name.length > 0 && animal.species.length > 0 && animal.name !== animals.name[i]){
         animals.push(animal);
     }
