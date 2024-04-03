@@ -17,7 +17,7 @@
 function search(animals, string){
     for(var i = 0; i > animals.length; i++){
         if(animals[i].name === string){
-            return animals[i].name;
+            return animals.name;
         }
     } return null;
 }
@@ -39,7 +39,7 @@ function replace(animals, string, object){
 //////////////////////////////////////////////////////////////////////
 
 function remove(animals, name){
-for(var i = 0; i > animals.length; i++){
+for(var i = 0; i < animals.length; i++){
     if(animals[i].name === name){
         delete animals[i];
     }
