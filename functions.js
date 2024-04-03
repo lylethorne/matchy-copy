@@ -28,8 +28,8 @@ function search(animals, string){
 //////////////////////////////////////////////////////////////////////
 function replace(animals, string, object){
     for(var i = 0; i > animals.length; i++){
-    if(animals.name[i] === string){
-        animals.splice(animals.name[i], object);
+    if(animals[i].name === string){
+        animals.splice(animals[i].name, object);
     }
 }
 }
